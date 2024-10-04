@@ -36,8 +36,7 @@ function randomizer() {
     }
     var button = Math.floor(Math.random() * 2) + 1;
     if (button == 1) {
-        enter();
-        previous = 1;
+        attack();
     } else if (button == 2) {
         if (previous == 1) {
             right();
@@ -50,4 +49,10 @@ function randomizer() {
         }
         previous = 2;
     }
+}
+
+function attack(){
+    enter();
+    previous = 1;
+    var attack = 
 }
