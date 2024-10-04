@@ -3,14 +3,16 @@ CONSOLE COMMAND:
 var script = document.createElement('script');
 script.src = 'https://raw.githubusercontent.com/yourusername/my-repo/main/script.js'; // Replace with your actual URL
 script.type = 'text/javascript';
-
 script.onload = function() {
     randomizer();
 };
-
+script.onerror = function() {
+    console.error('Error loading the script. Please check the URL.');
+};
 document.head.appendChild(script);
 */
 var previous = 1;
+console.log("PokeAuto running successfully");
 function randomizer() {
     function up() {
         document.dispatchEvent(new KeyboardEvent('keydown', { key: 'ArrowUp', code: 'ArrowUp', charCode: 38, keyCode: 38, bubbles: true }));
