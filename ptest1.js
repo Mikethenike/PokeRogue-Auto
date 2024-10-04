@@ -1,3 +1,7 @@
+//var script = document.createElement('script');
+//script.src = ''
+//script.type = 'text/javascript';
+//document.head.appendChild(script);
 var previous = 1;
 function randomizer() {
     function up() {
