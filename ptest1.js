@@ -24,11 +24,11 @@ function randomizer() {
         document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', code: 'Enter', charCode: 13, keyCode: 13, bubbles: true }));
         document.dispatchEvent(new KeyboardEvent('keyup', { key: 'Enter', code: 'Enter', charCode: 13, keyCode: 13, bubbles: true }));
     }
-    var button = Math.random() * 2;
-    if (Math.ceil(button) == 1) {
+    var button = Math.floor(Math.random() * 2) + 1;
+    if (button == 1) {
         enter();
         previous = 1;
-    } else if (Math.ceil(button) == 2) {
+    } else if (button == 2) {
         if (previous == 1) {
             right();
         }
