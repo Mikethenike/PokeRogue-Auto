@@ -1,7 +1,7 @@
 /*
 CONSOLE COMMAND:
 var script = document.createElement('script');
-script.src = 'https://raw.githubusercontent.com/yourusername/my-repo/main/script.js'; // Replace with your actual URL
+script.src = 'https://raw.githubusercontent.com/Mikethenike/PokeRogue-Auto/refs/heads/main/ptest1.js'; // Replace with your actual URL
 script.type = 'text/javascript';
 script.onload = function() {
     randomizer();
